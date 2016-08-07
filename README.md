@@ -1,1 +1,1 @@
-# leonardoHackathon
+# Leonardo's internal hackathon info website

@@ -282,3 +282,7 @@ a.arrow:hover {
   .hkt-heading {
     background-size: 12%;
     background-position: 23px 65px; } }
+
+@media only screen and (min-height: 1300px) {
+  .container {
+    height: 3700px; } }

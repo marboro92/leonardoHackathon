@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
+html {
+  font-family: 'Anonymous Pro', sans-serif; }
+
+body {
+  background: #fff; }
+
+.container h1 {
+  font-size: 5em;
+  line-height: 1em; }
+
+h1, h2 {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+  text-align: center; }
+
+p {
+  line-height: 1.3; }
+
+a {
+  color: white; }
+
+ul {
+  line-height: 1.3; }
+
+.highlight-green {
+  color: #ace643; }
+
+.highlight-orange {
+  color: orange; }
+
+a.arrow {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: none;
+  padding-bottom: 30px;
+  -webkit-transition: color 0.2s ease-out;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: color 0.2s ease-out;
+  /* Firefox 4-15 */
+  -o-transition: color 0.2s ease-out;
+  /* Opera 10.5–12.00 */
+  transition: color 0.2s ease-out;
+  /* Firefox 16+, Opera 12.50+ */ }
+
+a.arrow:hover {
+  color: #ace643; }
+
+.button {
+  background: #f36500;
+  text-align: center;
+  padding: .5em 1em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0.2em 0 #fd8e16;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  display: block;
+  /*transition cross-browser stuff*/
+  -webkit-transition: background 0.2s ease-out;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: background 0.2s ease-out;
+  /* Firefox 4-15 */
+  -o-transition: background 0.2s ease-out;
+  /* Opera 10.5–12.00 */
+  transition: background 0.2s ease-out;
+  /* Firefox 16+, Opera 12.50+ */ }
+
+.button:hover {
+  background: #ff8100; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background: #333;
+  opacity: 1;
+  z-index: 5;
+  font-family: 'orbitron', sans-serif;
+  letter-spacing: 0.1em; }
+  .nav ul li {
+    display: inline-block;
+    padding: 8px 20px; }
+    .nav ul li a {
+      text-decoration: none; }
+      .nav ul li a:hover {
+        color: #ace643; }
+
+.section {
+  position: absolute;
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: left; }
+  .section .section-image {
+    width: 200px;
+    opacity: 0.6;
+    display: none; }
+
+.hkt-heading {
+  background-image: url("../images/l-logo.png");
+  background-size: 15%;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: absolute;
+  padding: 60px;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  background-position: 0px 70px;
+  text-transform: uppercase; }
+  .hkt-heading h1, .hkt-heading p {
+    font-family: 'orbitron';
+    letter-spacing: 0.1em; }
+  .hkt-heading p {
+    opacity: 0.7; }
+  .hkt-heading .hkt-countdown {
+    color: #666;
+    margin-top: 30px; }
+    .hkt-heading .hkt-countdown span {
+      text-align: center;
+      width: 50px;
+      display: inline-block;
+      color: #FFF;
+      letter-spacing: 0.1em;
+      opacity: 0.8;
+      font-family: 'orbitron'; }
+  .hkt-heading .hkt-countdown.label {
+    margin-top: 0; }
+    .hkt-heading .hkt-countdown.label span {
+      width: 57px;
+      font-size: 8px;
+      opacity: 0.4; }
+
+#scrollBtn {
+  -ms-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -o-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  left: 50%;
+  -webkit-transform: translateY(0) translateX(-50%);
+  transform: translateY(0) translateX(-50%);
+  -moz-animation: chevron-bounce 1.5s infinite;
+  -o-animation: chevron-bounce 1.5s infinite;
+  -webkit-animation: chevron-bounce 1.5s infinite;
+  animation: chevron-bounce 1.5s infinite;
+  position: absolute;
+  padding-top: 30px;
+  margin-left: -15px;
+  opacity: 0.6; }
+
+@keyframes chevron-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-3%); }
+  60% {
+    transform: translateY(-1%); } }
+
+@-webkit-keyframes chevron-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-3%); }
+  60% {
+    transform: translateY(-1%); } }
+
+@-moz-keyframes chevron-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-3%); }
+  60% {
+    transform: translateY(-1%); } }
+
+#sect1 {
+  top: 682px; }
+
+#anchor1 {
+  top: 480px;
+  position: absolute; }
+
+#sect2 {
+  top: 1074px; }
+
+#sect3 {
+  top: 1564px; }
+
+#anchor3 {
+  top: 1200px;
+  position: absolute; }
+
+#sect4 {
+  top: 2152px; }
+
+#anchor4 {
+  top: 1800px;
+  position: absolute; }
+
+#sect5 {
+  top: 2641px; }
+
+#anchor5 {
+  top: 2400px;
+  position: absolute; }
+
+.container {
+  background: #333;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3400px;
+  color: white;
+  text-align: center;
+  min-width: 24px; }
+
+.explanation {
+  min-width: 12.42em;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); }
+  .explanation h4, .explanation p, .explanation a {
+    margin: 15px; }
+
+@media only screen and (min-width: 767px) {
+  body {
+    font-size: 1.125em;
+    /* 18px / 16px */ }
+  .centered {
+    text-align: center; }
+    .centered .text-container {
+      text-align: left; }
+  #sect3 .section-image, #sect3 .text-container, #sect5 .section-image, #sect5 .text-container {
+    display: inline-block;
+    vertical-align: middle; }
+  #sect3 .text-container, #sect5 .text-container {
+    width: 60%; }
+  #sect5 .section-image {
+    width: 200px;
+    opacity: 1; }
+  #sect3 .section-image {
+    width: 200px;
+    opacity: 0.6; }
+  #sect1 .section-image {
+    position: fixed;
+    width: 450px;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    display: block; }
+  .container {
+    background-size: 100%; }
+  .container h1 {
+    font-size: 3.25em;
+    /*52 / 16*/ }
+  a.button {
+    padding: .75em 1.5em;
+    display: inline-block; }
+  .explanation {
+    width: 75%; } }
+
+@media only screen and (max-width: 767px) {
+  .explanation {
+    float: none;
+    margin: auto; }
+  .container h1 {
+    font-size: 2em;
+    /*52 / 16*/ }
+  .nav {
+    display: none; }
+  .hkt-heading {
+    background-size: 12%;
+    background-position: 23px 65px; } }

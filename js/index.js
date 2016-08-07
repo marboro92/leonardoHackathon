@@ -1,10 +1,8 @@
-skrollr.init({
+if ($('body').width() > 768){
+	skrollr.init({
     forceHeight: false
 });
-
-
-
-/*!
+	/*!
  * Plugin for skrollr.
  * This plugin makes hashlinks scroll nicely to their target position.
  *
@@ -201,15 +199,9 @@ skrollr.menu.init(s, {
         //By default, the duration is hardcoded at 500ms.
         return 1000;
 
-        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
-        //return Math.abs(currentTop - targetTop) * 10;
     },
 });
-
-$(".icon-bookmark").click(function(){
-    $("#placemark").addClass("placemarked");
-    $(".icon-bookmark").addClass("pressed");
-});
+}
 
 CountDownTimer('08/31/2016 9:00 AM', 'countdown');
  
@@ -244,7 +236,7 @@ CountDownTimer('08/31/2016 9:00 AM', 'countdown');
             var minutes = formatTime(Math.floor((distance % _hour) / _minute));
             var seconds = formatTime(Math.floor((distance % _minute) / _second));
 
-            document.getElementById(id).innerHTML = '<span>' + days + '</span>' + ':';
+            document.getElementById(id).innerHTML = '<span>' + days + '</span>' +':';
             document.getElementById(id).innerHTML += '<span>' + hours + '</span>' + ':';
             document.getElementById(id).innerHTML += '<span>' + minutes + '</span>' + ':';
             document.getElementById(id).innerHTML += '<span>' + seconds + '</span>' + '';

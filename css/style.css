@@ -6,15 +6,6 @@ html {
 body {
   background: #fff; }
 
-.container h1 {
-  font-size: 5em;
-  line-height: 1em; }
-
-h1, h2 {
-  font-family: 'Anonymous Pro', sans-serif;
-  font-weight: 700;
-  text-align: center; }
-
 p {
   line-height: 1.3; }
 
@@ -29,8 +20,9 @@ ul {
 
 .highlight-orange {
   color: orange; }
+
 .highlight-pink {
-  color: rgb(177,11,87); }
+  color: #b10b57; }
 
 a.arrow {
   color: white;
@@ -83,6 +75,7 @@ a.arrow:hover {
   background: #333;
   opacity: 1;
   z-index: 5;
+  top: 0;
   font-family: 'orbitron', sans-serif;
   letter-spacing: 0.1em; }
   .nav ul li {
@@ -200,28 +193,57 @@ a.arrow:hover {
   position: absolute; }
 
 #sect4 {
-  top: 2152px; }
+  top: 1981px; }
 
 #anchor4 {
-  top: 1800px;
+  top: 1781px;
   position: absolute; }
 
 #sect5 {
   top: 2641px; }
 
 #anchor5 {
-  top: 2400px;
+  top: 2700px;
   position: absolute; }
 
 .container {
-  background: #333;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 3400px;
-  color: white;
-  text-align: center;
-  min-width: 24px; }
+  text-align: center; }
+  .container h1, .container h2 {
+    font-family: 'Anonymous Pro', sans-serif;
+    font-weight: 700;
+    text-align: left; }
+  .container.container-skrollr {
+    background: #333;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3400px;
+    color: white;
+    min-width: 24px; }
+  .container section {
+    text-align: left;
+    margin-top: 120px;
+    color: #333;
+    background: #fdfdfd; }
+    .container section article {
+      max-width: 1170px;
+      padding: 10px 15px 55px 15px;
+      margin: 35px auto;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
+      .container section article p {
+        margin: 0 35px; }
+      .container section article a {
+        color: #b10b57; }
+
+.container-skrollr h1 {
+  font-size: 5em;
+  line-height: 1em;
+  font-family: 'orbitron', sans-serif; }
+
+.container-skrollr h2 {
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: 700;
+  text-align: center; }
 
 .explanation {
   min-width: 12.42em;
@@ -234,6 +256,15 @@ a.arrow:hover {
   -webkit-transform: translateX(-50%); }
   .explanation h4, .explanation p, .explanation a {
     margin: 15px; }
+
+.timetable {
+  margin-top: 15px;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top; }
+
+.border-right {
+  border-right: 1px solid #fff; }
 
 @media only screen and (min-width: 767px) {
   body {
@@ -261,9 +292,9 @@ a.arrow:hover {
     right: 0;
     opacity: 0.2;
     display: block; }
-  .container {
+  .container-skrollr {
     background-size: 100%; }
-  .container h1 {
+  .container-skrollr h1 {
     font-size: 3.25em;
     /*52 / 16*/ }
   a.button {
@@ -276,7 +307,7 @@ a.arrow:hover {
   .explanation {
     float: none;
     margin: auto; }
-  .container h1 {
+  .container-skrollr h1 {
     font-size: 2em;
     /*52 / 16*/ }
   .nav {
@@ -286,5 +317,5 @@ a.arrow:hover {
     background-position: 23px 65px; } }
 
 @media only screen and (min-height: 1300px) {
-  .container {
+  .container-skrollr {
     height: 3700px; } }
